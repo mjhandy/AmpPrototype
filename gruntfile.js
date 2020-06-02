@@ -77,7 +77,7 @@ module.exports = function(grunt) {
           minifCSS : true
         },
         files: {
-          './dist/**/*.html' :  './min/**/*.html'
+          'min/*.html' :  'dist/*.html'
         }
       }
     }, 

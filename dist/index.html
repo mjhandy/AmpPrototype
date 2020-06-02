@@ -174,6 +174,14 @@ amp-accordion section {
   padding: 0;
 }
 
+amp-carousel .slide {
+  padding: 10px 0;
+}
+
+amp-carousel .slide h3 {
+  color: #1475DC;
+}
+
 .header {
   background-color: #000;
   height: 50px;
@@ -446,543 +454,543 @@ section.body:nth-child(odd) {
 
 <body>  
   <amp-sidebar id="mainMenu" layout="nodisplay">
-    <amp-accordion class='mainMenu' expand-single-section animate>
-      <section>
-        <h2 class='mainMenu-heading'>Products</h2>
-        <div class='mainMenu-items'>
-          <div class='mainMenu-items--flex'>
-            <ul>
-              <li>
-                <h3>Applications</h3>
-              </li>
-              <li>
-                <a href="/us/en/solutions/secure-mobile-apps.html" role="menuitem">Overview</a>
-              </li>
-              <li>
-                <a href="/us/en/products/apps/blackberry-dynamics/blackberry-dynamics-apps/overview.html"
-                  role="menuitem">BlackBerry Dynamics Apps</a>
-              </li>
-              <li>
-                <a href="/us/en/products/apps/blackberry-dynamics-platform/overview.html" role="menuitem">BlackBerry
-                  Dynamics Platform</a>
-              </li>
-              <li>
-                <a href="https://marketplace.blackberry.com/#/apps" rel="noopener" role="menuitem">BlackBerry
-                  Marketplace
-                  for Enterprise Software</a>
-              </li>
-              <li>
-                <a href="/us/en/products/devices/blackberry-hub-plus.html" role="menuitem">BlackBerry Apps for Android
-                  Smartphones</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>AI &amp; Predictive Security</h3>
-              </li>
-              <li>
-                <a href="/us/en/solutions/artificial-intelligence-predictive-security.html" role="menuitem">Overview</a>
-              </li>
-              <li>
-                <a href="https://www.cylance.com/en-us/platform/products/index.html" rel="noopener" role="menuitem"
-                  target="_blank">CylancePROTECT</a>
-              </li>
-              <li>
-                <a href="https://www.cylance.com/en-us/platform/products/cylance-optics.html" rel="noopener"
-                  role="menuitem" target="_blank">CylanceOPTICS</a>
-              </li>
-              <li>
-                <a href="https://shop.cylance.com/us" rel="noopener" role="menuitem" target="_blank">Cylance Smart
-                  Antivirus (Consumer)</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Embedded</h3>
-              </li>
-              <li>
-                <a href="/us/en/solutions/embedded-solutions.html" role="menuitem">Overview</a>
-              </li>
-              <li>
-                <a href="https://blackberry.certicom.com/en/products/certicom-asset-management-system" rel="noopener"
-                  role="menuitem" target="_blank">Certicom Asset Management System</a>
-              </li>
-              <li>
-                <a href="https://blackberry.qnx.com/en" rel="noopener" role="menuitem" target="_blank">QNX Real Time
-                  Operating Systems</a>
-              </li>
-              <li>
-                <a href="http://blackberry.qnx.com/en/products/hypervisor/index" rel="noopener" role="menuitem"
-                  target="_blank">QNX Hypervisor</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Endpoint Management</h3>
-              </li>
-              <li>
-                <a href="/us/en/solutions/unified-endpoint-management.html" role="menuitem">Overview</a>
-              </li>
-              <li>
-                <a href="/us/en/products/endpoint-management/blackberry-uem.html" role="menuitem">BlackBerry UEM</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Content Collaboration</h3>
-              </li>
-              <li>
-                <a href="/us/en/solutions/secure-file-sharing-efss.html" role="menuitem">Overview</a>
-              </li>
-              <li>
-                <a href="/us/en/products/content-collaboration/blackberry-workspaces-efss/overview.html"
-                  role="menuitem">BlackBerry Workspaces</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Alert & Crisis Communication</h3>
-              </li>
-              <li>
-                <a href="/us/en/solutions/emergency-notification-systems.html" role="menuitem">Overview</a>
-              </li>
-              <li>
-                <a href="/us/en/products/alerts-crisis-communications/blackberry-athoc/overview.html"
-                  role="menuitem">BlackBerry AtHoc</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Identity & Access Management</h3>
-              </li>
-              <li>
-                <a href="/us/en/solutions/identity-access-management-iam.html" role="menuitem">Overview</a>
-              </li>
-              <li>
-                <a href="/us/en/products/identity-access/blackberry-enterprise-identity/overview.html"
-                  role="menuitem">BlackBerry Enterprise Identity</a>
-              </li>
-              <li>
-                <a href="/us/en/products/identity-access/blackberry-2fa/overview.html" role="menuitem">BlackBerry
-                  2FA</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Automotive</h3>
-              </li>
-              <li>
-                <a href="/us/en/solutions/embedded-solutions.html" role="menuitem">Overview</a>
-              </li>
-              <li>
-                <a href="https://blackberry.qnx.com/content/qnx/en/products/instrument-clusters" rel="noopener"
-                  role="menuitem" target="_blank">QNX Platform for Instrument Clusters</a>
-              </li>
-              <li>
-                <a href="http://blackberry.qnx.com/en/products/adas/index" rel="noopener" role="menuitem"
-                  target="_blank">QNX ADAS Platform</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Transportation Asset Tracking</h3>
-              </li>
-              <li>
-                <a href="/us/en/products/blackberry-radar/overview.html" role="menuitem">BlackBerry Radar</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Messaging, Voice & Text</h3>
-              </li>
-              <li>
-                <a href="/us/en/solutions/secure-communication.html" role="menuitem">Overview</a>
-              </li>
-              <li>
-                <a href="/us/en/products/messaging/bbm-enterprise/overview.html" role="menuitem">BBM Enterprise</a>
-              </li>
-              <li>
-                <a href="/us/en/products/messaging/secusuite-government.html" role="menuitem">SecuSUITE</a>
-              </li>
-              <li>
-                <a href="/us/en/products/messaging/blackberry-spark-communications-services-cpaas.html"
-                  role="menuitem">BlackBerry Spark Communications Services</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Devices</h3>
-              </li>
-              <li>
-                <a href="https://us.blackberry.com/smartphones" rel="noopener" role="menuitem" class="">Overview</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Static Application Security Testing</h3>
-              </li>
-              <li>
-                <a href="/us/en/static-application-security-testing/blackberry-jarvis.html" role="menuitem">BlackBerry
-                  Jarvis</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="/us/en/products/blackberry-enterprise-mobility-suite/overview.html" role="menuitem"
-                  class="blue">BlackBerry Enterprise Mobility Suite</a>
-              </li>
-              <li>
-                <a href="https://www.blackberry.com/us/en/products/all-products" rel="noopener" role="menuitem"
-                  class="blue">All Products</a>
-              </li>
-              <li>
-                <a href="/us/en/customers/resource-center.html" role="menuitem" class="blue">Resource Center</a>
-              </li>
-            </ul>
-          </div>
+  <amp-accordion class='mainMenu' expand-single-section animate>
+    <section>
+      <h2 class='mainMenu-heading'>Products</h2>
+      <div class='mainMenu-items'>
+        <div class='mainMenu-items--flex'>
+          <ul>
+            <li>
+              <h3>Applications</h3>
+            </li>
+            <li>
+              <a href="/us/en/solutions/secure-mobile-apps.html" role="menuitem">Overview</a>
+            </li>
+            <li>
+              <a href="/us/en/products/apps/blackberry-dynamics/blackberry-dynamics-apps/overview.html"
+                role="menuitem">BlackBerry Dynamics Apps</a>
+            </li>
+            <li>
+              <a href="/us/en/products/apps/blackberry-dynamics-platform/overview.html" role="menuitem">BlackBerry
+                Dynamics Platform</a>
+            </li>
+            <li>
+              <a href="https://marketplace.blackberry.com/#/apps" rel="noopener" role="menuitem">BlackBerry
+                Marketplace
+                for Enterprise Software</a>
+            </li>
+            <li>
+              <a href="/us/en/products/devices/blackberry-hub-plus.html" role="menuitem">BlackBerry Apps for Android
+                Smartphones</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>AI &amp; Predictive Security</h3>
+            </li>
+            <li>
+              <a href="/us/en/solutions/artificial-intelligence-predictive-security.html" role="menuitem">Overview</a>
+            </li>
+            <li>
+              <a href="https://www.cylance.com/en-us/platform/products/index.html" rel="noopener" role="menuitem"
+                target="_blank">CylancePROTECT</a>
+            </li>
+            <li>
+              <a href="https://www.cylance.com/en-us/platform/products/cylance-optics.html" rel="noopener"
+                role="menuitem" target="_blank">CylanceOPTICS</a>
+            </li>
+            <li>
+              <a href="https://shop.cylance.com/us" rel="noopener" role="menuitem" target="_blank">Cylance Smart
+                Antivirus (Consumer)</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Embedded</h3>
+            </li>
+            <li>
+              <a href="/us/en/solutions/embedded-solutions.html" role="menuitem">Overview</a>
+            </li>
+            <li>
+              <a href="https://blackberry.certicom.com/en/products/certicom-asset-management-system" rel="noopener"
+                role="menuitem" target="_blank">Certicom Asset Management System</a>
+            </li>
+            <li>
+              <a href="https://blackberry.qnx.com/en" rel="noopener" role="menuitem" target="_blank">QNX Real Time
+                Operating Systems</a>
+            </li>
+            <li>
+              <a href="http://blackberry.qnx.com/en/products/hypervisor/index" rel="noopener" role="menuitem"
+                target="_blank">QNX Hypervisor</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Endpoint Management</h3>
+            </li>
+            <li>
+              <a href="/us/en/solutions/unified-endpoint-management.html" role="menuitem">Overview</a>
+            </li>
+            <li>
+              <a href="/us/en/products/endpoint-management/blackberry-uem.html" role="menuitem">BlackBerry UEM</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Content Collaboration</h3>
+            </li>
+            <li>
+              <a href="/us/en/solutions/secure-file-sharing-efss.html" role="menuitem">Overview</a>
+            </li>
+            <li>
+              <a href="/us/en/products/content-collaboration/blackberry-workspaces-efss/overview.html"
+                role="menuitem">BlackBerry Workspaces</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Alert & Crisis Communication</h3>
+            </li>
+            <li>
+              <a href="/us/en/solutions/emergency-notification-systems.html" role="menuitem">Overview</a>
+            </li>
+            <li>
+              <a href="/us/en/products/alerts-crisis-communications/blackberry-athoc/overview.html"
+                role="menuitem">BlackBerry AtHoc</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Identity & Access Management</h3>
+            </li>
+            <li>
+              <a href="/us/en/solutions/identity-access-management-iam.html" role="menuitem">Overview</a>
+            </li>
+            <li>
+              <a href="/us/en/products/identity-access/blackberry-enterprise-identity/overview.html"
+                role="menuitem">BlackBerry Enterprise Identity</a>
+            </li>
+            <li>
+              <a href="/us/en/products/identity-access/blackberry-2fa/overview.html" role="menuitem">BlackBerry
+                2FA</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Automotive</h3>
+            </li>
+            <li>
+              <a href="/us/en/solutions/embedded-solutions.html" role="menuitem">Overview</a>
+            </li>
+            <li>
+              <a href="https://blackberry.qnx.com/content/qnx/en/products/instrument-clusters" rel="noopener"
+                role="menuitem" target="_blank">QNX Platform for Instrument Clusters</a>
+            </li>
+            <li>
+              <a href="http://blackberry.qnx.com/en/products/adas/index" rel="noopener" role="menuitem"
+                target="_blank">QNX ADAS Platform</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Transportation Asset Tracking</h3>
+            </li>
+            <li>
+              <a href="/us/en/products/blackberry-radar/overview.html" role="menuitem">BlackBerry Radar</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Messaging, Voice & Text</h3>
+            </li>
+            <li>
+              <a href="/us/en/solutions/secure-communication.html" role="menuitem">Overview</a>
+            </li>
+            <li>
+              <a href="/us/en/products/messaging/bbm-enterprise/overview.html" role="menuitem">BBM Enterprise</a>
+            </li>
+            <li>
+              <a href="/us/en/products/messaging/secusuite-government.html" role="menuitem">SecuSUITE</a>
+            </li>
+            <li>
+              <a href="/us/en/products/messaging/blackberry-spark-communications-services-cpaas.html"
+                role="menuitem">BlackBerry Spark Communications Services</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Devices</h3>
+            </li>
+            <li>
+              <a href="https://us.blackberry.com/smartphones" rel="noopener" role="menuitem" class="">Overview</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Static Application Security Testing</h3>
+            </li>
+            <li>
+              <a href="/us/en/static-application-security-testing/blackberry-jarvis.html" role="menuitem">BlackBerry
+                Jarvis</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="/us/en/products/blackberry-enterprise-mobility-suite/overview.html" role="menuitem"
+                class="blue">BlackBerry Enterprise Mobility Suite</a>
+            </li>
+            <li>
+              <a href="https://www.blackberry.com/us/en/products/all-products" rel="noopener" role="menuitem"
+                class="blue">All Products</a>
+            </li>
+            <li>
+              <a href="/us/en/customers/resource-center.html" role="menuitem" class="blue">Resource Center</a>
+            </li>
+          </ul>
         </div>
-      </section>
-      <section>
-        <h2 class='mainMenu-heading'>Services</h2>
-        <div class='mainMenu-items'>
-          <div class='mainMenu-items--flex'>
-            <ul>
-              <li>
-                <h3>Professional Services</h3>
-              </li>
-              <li>
-                <a href="/us/en/services/professional-services/blackberry-cybersecurity-consulting.html"
-                  role="menuitem">Cybersecurity Consulting</a>
-              </li>
-              <li>
-                <a href="/us/en/services/professional-services/enterprise-consulting.html" role="menuitem">Enterprise
-                  Consulting</a>
-              </li>
-              <li>
-                <a href="http://www.qnx.com/services/index.html" rel="noopener" role="menuitem" target="_blank">QNX
-                  Professional Services</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Support & Training</h3>
-              </li>
-              <li>
-                <a href="/us/en/support/enterpriseapps/support-services.html" role="menuitem">Technical Support</a>
-              </li>
-              <li>
-                <a href="https://us.blackberry.com/enterprise/security/incident-response-team" rel="noopener"
-                  role="menuitem">Incident Response Team</a>
-              </li>
-              <li>
-                <a href="/us/en/support/enterpriseapps/blackberry-training/blackberrytraining.html"
-                  role="menuitem">Technical Training</a>
-              </li>
-              <li>
-                <a href="http://www.qnx.com/services/training/" rel="noopener" role="menuitem" target="_blank">QNX
-                  Product Training</a>
-              </li>
-            </ul>
-          </div>
+      </div>
+    </section>
+    <section>
+      <h2 class='mainMenu-heading'>Services</h2>
+      <div class='mainMenu-items'>
+        <div class='mainMenu-items--flex'>
+          <ul>
+            <li>
+              <h3>Professional Services</h3>
+            </li>
+            <li>
+              <a href="/us/en/services/professional-services/blackberry-cybersecurity-consulting.html"
+                role="menuitem">Cybersecurity Consulting</a>
+            </li>
+            <li>
+              <a href="/us/en/services/professional-services/enterprise-consulting.html" role="menuitem">Enterprise
+                Consulting</a>
+            </li>
+            <li>
+              <a href="http://www.qnx.com/services/index.html" rel="noopener" role="menuitem" target="_blank">QNX
+                Professional Services</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Support & Training</h3>
+            </li>
+            <li>
+              <a href="/us/en/support/enterpriseapps/support-services.html" role="menuitem">Technical Support</a>
+            </li>
+            <li>
+              <a href="https://us.blackberry.com/enterprise/security/incident-response-team" rel="noopener"
+                role="menuitem">Incident Response Team</a>
+            </li>
+            <li>
+              <a href="/us/en/support/enterpriseapps/blackberry-training/blackberrytraining.html"
+                role="menuitem">Technical Training</a>
+            </li>
+            <li>
+              <a href="http://www.qnx.com/services/training/" rel="noopener" role="menuitem" target="_blank">QNX
+                Product Training</a>
+            </li>
+          </ul>
         </div>
-      </section>
-      <section>
-        <h2 class='mainMenu-heading'>Industries</h2>
-        <div class='mainMenu-items'>
-          <div class='mainMenu-items--flex'>
-            <ul>
-              <li>
-                <h3>Financial Services</h3>
-              </li>
-              <li>
-                <a href="/us/en/industries/financial-services.html" role="menuitem">Banking</a>
-              </li>
-              <li>
-                <a href="/us/en/industries/insurance.html" role="menuitem">Insurance</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Transportation</h3>
-              </li>
-              <li>
-                <a href="http://blackberry.qnx.com/en/solutions/industries/automotive/index" rel="noopener"
-                  role="menuitem" target="_blank">Automotive</a>
-              </li>
-              <li>
-                <a href="http://blackberry.qnx.com/en/solutions/industries/rail-safety/index" rel="noopener"
-                  role="menuitem" target="_blank">Railways</a>
-              </li>
-              <li>
-                <a href="/us/en/products/blackberry-radar.html" role="menuitem">Transportation &amp; Logistics</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Government</h3>
-              </li>
-              <li>
-                <a href="/us/en/industries/government.html" role="menuitem">Central Government</a>
-              </li>
-              <li>
-                <a href="/us/en/industries/defense-military.html" role="menuitem">Defense &amp; Security</a>
-              </li>
-              <li>
-                <a href="/us/en/industries/public-safety.html" role="menuitem">Public Safety &amp; Law Enforcement</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Education</h3>
-              </li>
-              <li>
-                <a href="/us/en/industries/education.html" role="menuitem">Universities &amp; Colleges</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Professional Services</h3>
-              </li>
-              <li>
-                <a href="/us/en/industries/legal.html" role="menuitem">Legal</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Manufactoring</h3>
-              </li>
-              <li>
-                <a href="http://blackberry.qnx.com/en/solutions/industries/automation/index" rel="noopener"
-                  role="menuitem" target="_blank">Industrial Automation</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Healthcare</h3>
-              </li>
-              <li>
-                <a href="/us/en/industries/healthcare.html" role="menuitem">Healthcare Providers</a>
-              </li>
-              <li>
-                <a href="/us/en/industries/life-sciences.html" role="menuitem">Life Sciences</a>
-              </li>
-            </ul>
-          </div>
+      </div>
+    </section>
+    <section>
+      <h2 class='mainMenu-heading'>Industries</h2>
+      <div class='mainMenu-items'>
+        <div class='mainMenu-items--flex'>
+          <ul>
+            <li>
+              <h3>Financial Services</h3>
+            </li>
+            <li>
+              <a href="/us/en/industries/financial-services.html" role="menuitem">Banking</a>
+            </li>
+            <li>
+              <a href="/us/en/industries/insurance.html" role="menuitem">Insurance</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Transportation</h3>
+            </li>
+            <li>
+              <a href="http://blackberry.qnx.com/en/solutions/industries/automotive/index" rel="noopener"
+                role="menuitem" target="_blank">Automotive</a>
+            </li>
+            <li>
+              <a href="http://blackberry.qnx.com/en/solutions/industries/rail-safety/index" rel="noopener"
+                role="menuitem" target="_blank">Railways</a>
+            </li>
+            <li>
+              <a href="/us/en/products/blackberry-radar.html" role="menuitem">Transportation &amp; Logistics</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Government</h3>
+            </li>
+            <li>
+              <a href="/us/en/industries/government.html" role="menuitem">Central Government</a>
+            </li>
+            <li>
+              <a href="/us/en/industries/defense-military.html" role="menuitem">Defense &amp; Security</a>
+            </li>
+            <li>
+              <a href="/us/en/industries/public-safety.html" role="menuitem">Public Safety &amp; Law Enforcement</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Education</h3>
+            </li>
+            <li>
+              <a href="/us/en/industries/education.html" role="menuitem">Universities &amp; Colleges</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Professional Services</h3>
+            </li>
+            <li>
+              <a href="/us/en/industries/legal.html" role="menuitem">Legal</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Manufactoring</h3>
+            </li>
+            <li>
+              <a href="http://blackberry.qnx.com/en/solutions/industries/automation/index" rel="noopener"
+                role="menuitem" target="_blank">Industrial Automation</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Healthcare</h3>
+            </li>
+            <li>
+              <a href="/us/en/industries/healthcare.html" role="menuitem">Healthcare Providers</a>
+            </li>
+            <li>
+              <a href="/us/en/industries/life-sciences.html" role="menuitem">Life Sciences</a>
+            </li>
+          </ul>
         </div>
-      </section>
-      <section>
-        <h2 class='mainMenu-heading'>Partners</h2>
-        <div class='mainMenu-items'>
-          <div class='mainMenu-items--flex'>
-            <ul>
-              <li>
-                <h3>BlackBerry Partner Program</h3>
-              </li>
-              <li>
-                <a href="/us/en/partners.html" role="menuitem">Program Overview</a>
-              </li>
-              <li>
-                <a href="/us/en/partners/solutions-providers.html" role="menuitem">Solutions Providers</a>
-              </li>
-              <li>
-                <a href="/us/en/partners/isv-partner.html" role="menuitem">ISVs</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Become a Partner</h3>
-              </li>
-              <li>
-                <a href="/us/en/partners/become-solutions-provider/overview.html" role="menuitem">Solutions Provider</a>
-              </li>
-              <li>
-                <a href="/us/en/forms/partners/isv-partner-application.html" role="menuitem">ISV</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Find a Partner</h3>
-              </li>
-              <li>
-                <a href="https://marketplace.blackberry.com/apps" rel="noopener" role="menuitem" target="_blank">Partner
-                  Apps</a>
-              </li>
-              <li>
-                <a href="/us/en/support/enterpriseapps/blackberry-training/authorizedtrainingpartners.html"
-                  role="menuitem" target="_blank">Training Partners</a>
-              </li>
-              <li>
-                <a href="http://blackberry.qnx.com/en/partners" rel="noopener" role="menuitem"
-                  target="_blank">BlackBerry QNX Partners</a>
-              </li>
-            </ul>
-          </div>
+      </div>
+    </section>
+    <section>
+      <h2 class='mainMenu-heading'>Partners</h2>
+      <div class='mainMenu-items'>
+        <div class='mainMenu-items--flex'>
+          <ul>
+            <li>
+              <h3>BlackBerry Partner Program</h3>
+            </li>
+            <li>
+              <a href="/us/en/partners.html" role="menuitem">Program Overview</a>
+            </li>
+            <li>
+              <a href="/us/en/partners/solutions-providers.html" role="menuitem">Solutions Providers</a>
+            </li>
+            <li>
+              <a href="/us/en/partners/isv-partner.html" role="menuitem">ISVs</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Become a Partner</h3>
+            </li>
+            <li>
+              <a href="/us/en/partners/become-solutions-provider/overview.html" role="menuitem">Solutions Provider</a>
+            </li>
+            <li>
+              <a href="/us/en/forms/partners/isv-partner-application.html" role="menuitem">ISV</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Find a Partner</h3>
+            </li>
+            <li>
+              <a href="https://marketplace.blackberry.com/apps" rel="noopener" role="menuitem" target="_blank">Partner
+                Apps</a>
+            </li>
+            <li>
+              <a href="/us/en/support/enterpriseapps/blackberry-training/authorizedtrainingpartners.html"
+                role="menuitem" target="_blank">Training Partners</a>
+            </li>
+            <li>
+              <a href="http://blackberry.qnx.com/en/partners" rel="noopener" role="menuitem" target="_blank">BlackBerry
+                QNX Partners</a>
+            </li>
+          </ul>
         </div>
-      </section>
-      <section>
-        <h2 class='mainMenu-heading'>Support</h2>
-        <div class='mainMenu-items'>
-          <div class='mainMenu-items--flex'>
-            <ul>
-              <li>
-                <a href="/us/en/support.html" role="menuitem">Support Overview</a>
-              </li>
-            </ul>
-            <ul>
-              <li><a href="https://us.blackberry.com/support/contact" rel="noopener" role="menuitem">Contact Us</a></li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Enterprise Platforms & Apps</h3>
-              </li>
-              <li>
-                <a href="/us/en/support/enterprise-apps/blackberry-uem.html" role="menuitem">BlackBerry UEM</a>
-              </li>
-              <li>
-                <a href="/us/en/support/enterprise-apps/blackberry-mobility-suites.html" role="menuitem">BlackBerry
-                  Mobility Suites</a>
-              </li>
-              <li>
-                <a href="/us/en/support/enterprise-apps/blackberry-workspaces.html" role="menuitem">BlackBerry
-                  Workspaces</a>
-              </li>
-              <li>
-                <a href="/us/en/support/enterprise-apps/blackberry-2fa.html" role="menuitem">BlackBerry 2FA</a>
-              </li>
-              <li>
-                <a href="/us/en/support/enterprise-apps/blackberry-enterprise-identity.html" role="menuitem">BlackBerry
-                  Enterprise Identity</a>
-              </li>
-              <li>
-                <a href="/us/en/support/enterprise-apps/bbm-enterprise.html" role="menuitem">BBM Enterprise</a>
-              </li>
-              <li>
-                <a href="https://support.athoc.com/customer-support-portal/login.html" rel="noopener" role="menuitem"
-                  target="_blank">BlackBerry AtHoc</a>
-              </li>
-              <li>
-                <a href="/us/en/support/enterprise-apps/uem-cloud.html" role="menuitem">UEM Cloud</a>
-              </li>
-              <li>
-                <a href="/us/en/support/enterprise-apps/blackberry-supported-isv-products.html"
-                  role="menuitem">BlackBerry Supported ISV Apps</a>
-              </li>
-              <li>
-                <a href="/us/en/support/enterprise-apps/blackberry-enterprise-bridge.html" role="menuitem">BlackBerry
-                  Enterprise BRIDGE</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Portals & Resources</h3>
-              </li>
-              <li>
-                <a href="https://myaccount.blackberry.com/myaccount/auth/login?locale=en" rel="noopener" role="menuitem"
-                  target="_blank">myAccount &amp; Admin Portal</a>
-              </li>
-              <li>
-                <a href="https://www.blackberry.com/us/en/support/software-support-life-cycle" rel="noopener"
-                  role="menuitem">BlackBerry Software Lifecycle</a>
-              </li>
-              <li>
-                <a href="http://support.blackberry.com/kb/" rel="noopener" role="menuitem" target="_blank">Knowledge
-                  Base</a>
-              </li>
-              <li>
-                <a href="http://www.qnx.com/support/index.html" rel="noopener" role="menuitem"
-                  target="_blank">BlackBerry QNX Support</a>
-              </li>
-              <li>
-                <a href="/us/en/support/blackberry-radar.html" role="menuitem">BlackBerry Radar Support</a>
-              </li>
-              <li>
-                <a href="https://developers.blackberry.com/us/en/community.html" rel="noopener" role="menuitem"
-                  target="_blank">Developer Network</a>
-              </li>
-              <li>
-                <a href="https://www.qnx.com/account/login.html?returnaddress=%2Fdownload%2Fgroup.html%3Fprogramid%3D29178"
-                  rel="noopener" role="menuitem" target="_blank">BlackBerry QNX Developer Network</a>
-              </li>
-              <li>
-                <a href="http://helpblog.blackberry.com/" rel="noopener" role="menuitem" target="_blank">Help Blog</a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/user/blackberrysupport" rel="noopener" role="menuitem"
-                  target="_blank">BlackBerry Support Videos</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Smartphones & Apps</h3>
-              </li>
-              <li>
-                <a href="/us/en/support/devices.html" role="menuitem">Smartphones</a>
-              </li>
-              <li>
-                <a href="/us/en/support/smartphone/apps.html" role="menuitem">Smartphone Apps</a>
-              </li>
-              <li>
-                <a href="/us/en/support/desktop-software-downloads.html" role="menuitem">Desktop Software Downloads</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Product Information</h3>
-              </li>
-              <li>
-                <a href="https://docs.blackberry.com/en" rel="noopener" role="menuitem" target="_blank">Documentation
-                  and Manuals</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h3>Enterprise Support Services</h3>
-              </li>
-              <li>
-                <a href="/us/en/support/enterpriseapps/support-services.html" role="menuitem">Enterprise Support
-                  Services</a>
-              </li>
-              <li>
-                <a href="/us/en/support/enterpriseapps/blackberry-enterprise-consulting.html" role="menuitem">BlackBerry
-                  Enterprise Consulting</a>
-              </li>
-              <li>
-                <a href="/us/en/support/enterpriseapps/blackberry-training.html" role="menuitem">Training &amp;
-                  Accreditation</a>
-              </li>
-            </ul>
+      </div>
+    </section>
+    <section>
+      <h2 class='mainMenu-heading'>Support</h2>
+      <div class='mainMenu-items'>
+        <div class='mainMenu-items--flex'>
+          <ul>
+            <li>
+              <a href="/us/en/support.html" role="menuitem">Support Overview</a>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="https://us.blackberry.com/support/contact" rel="noopener" role="menuitem">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Enterprise Platforms & Apps</h3>
+            </li>
+            <li>
+              <a href="/us/en/support/enterprise-apps/blackberry-uem.html" role="menuitem">BlackBerry UEM</a>
+            </li>
+            <li>
+              <a href="/us/en/support/enterprise-apps/blackberry-mobility-suites.html" role="menuitem">BlackBerry
+                Mobility Suites</a>
+            </li>
+            <li>
+              <a href="/us/en/support/enterprise-apps/blackberry-workspaces.html" role="menuitem">BlackBerry
+                Workspaces</a>
+            </li>
+            <li>
+              <a href="/us/en/support/enterprise-apps/blackberry-2fa.html" role="menuitem">BlackBerry 2FA</a>
+            </li>
+            <li>
+              <a href="/us/en/support/enterprise-apps/blackberry-enterprise-identity.html" role="menuitem">BlackBerry
+                Enterprise Identity</a>
+            </li>
+            <li>
+              <a href="/us/en/support/enterprise-apps/bbm-enterprise.html" role="menuitem">BBM Enterprise</a>
+            </li>
+            <li>
+              <a href="https://support.athoc.com/customer-support-portal/login.html" rel="noopener" role="menuitem"
+                target="_blank">BlackBerry AtHoc</a>
+            </li>
+            <li>
+              <a href="/us/en/support/enterprise-apps/uem-cloud.html" role="menuitem">UEM Cloud</a>
+            </li>
+            <li>
+              <a href="/us/en/support/enterprise-apps/blackberry-supported-isv-products.html" role="menuitem">BlackBerry
+                Supported ISV Apps</a>
+            </li>
+            <li>
+              <a href="/us/en/support/enterprise-apps/blackberry-enterprise-bridge.html" role="menuitem">BlackBerry
+                Enterprise BRIDGE</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Portals & Resources</h3>
+            </li>
+            <li>
+              <a href="https://myaccount.blackberry.com/myaccount/auth/login?locale=en" rel="noopener" role="menuitem"
+                target="_blank">myAccount &amp; Admin Portal</a>
+            </li>
+            <li>
+              <a href="https://www.blackberry.com/us/en/support/software-support-life-cycle" rel="noopener"
+                role="menuitem">BlackBerry Software Lifecycle</a>
+            </li>
+            <li>
+              <a href="http://support.blackberry.com/kb/" rel="noopener" role="menuitem" target="_blank">Knowledge
+                Base</a>
+            </li>
+            <li>
+              <a href="http://www.qnx.com/support/index.html" rel="noopener" role="menuitem" target="_blank">BlackBerry
+                QNX Support</a>
+            </li>
+            <li>
+              <a href="/us/en/support/blackberry-radar.html" role="menuitem">BlackBerry Radar Support</a>
+            </li>
+            <li>
+              <a href="https://developers.blackberry.com/us/en/community.html" rel="noopener" role="menuitem"
+                target="_blank">Developer Network</a>
+            </li>
+            <li>
+              <a href="https://www.qnx.com/account/login.html?returnaddress=%2Fdownload%2Fgroup.html%3Fprogramid%3D29178"
+                rel="noopener" role="menuitem" target="_blank">BlackBerry QNX Developer Network</a>
+            </li>
+            <li>
+              <a href="http://helpblog.blackberry.com/" rel="noopener" role="menuitem" target="_blank">Help Blog</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/user/blackberrysupport" rel="noopener" role="menuitem"
+                target="_blank">BlackBerry Support Videos</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Smartphones & Apps</h3>
+            </li>
+            <li>
+              <a href="/us/en/support/devices.html" role="menuitem">Smartphones</a>
+            </li>
+            <li>
+              <a href="/us/en/support/smartphone/apps.html" role="menuitem">Smartphone Apps</a>
+            </li>
+            <li>
+              <a href="/us/en/support/desktop-software-downloads.html" role="menuitem">Desktop Software Downloads</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Product Information</h3>
+            </li>
+            <li>
+              <a href="https://docs.blackberry.com/en" rel="noopener" role="menuitem" target="_blank">Documentation
+                and Manuals</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>Enterprise Support Services</h3>
+            </li>
+            <li>
+              <a href="/us/en/support/enterpriseapps/support-services.html" role="menuitem">Enterprise Support
+                Services</a>
+            </li>
+            <li>
+              <a href="/us/en/support/enterpriseapps/blackberry-enterprise-consulting.html" role="menuitem">BlackBerry
+                Enterprise Consulting</a>
+            </li>
+            <li>
+              <a href="/us/en/support/enterpriseapps/blackberry-training.html" role="menuitem">Training &amp;
+                Accreditation</a>
+            </li>
+          </ul>
 
-          </div>
         </div>
-      </section>
-      <section>
-        <h2 class='mainMenu-heading'>Blog</h2>
-        <div class='mainMenu-items'>
-          <div class='mainMenu-items--flex'>
-            <ul>
-              <li>
-                <a href="http://blogs.blackberry.com/" role="menuitem">Enterprise Blog</a>
-              </li>
-              <li>
-                <a href="http://devblog.blackberry.com/" role="menuitem">Developer Blog</a>
-              </li>
-              <li>
-                <a href="http://helpblog.blackberry.com/" role="menuitem">Support Blog</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="https://www.blackberry.com/us/en/customers/resource-center?assetType=webcast">Webcasts</a>
-              </li>
-              <li>
-                <a href="https://www.blackberry.com/us/en/company/newsroom">Recent News</a>
-              </li>
-            </ul>
-          </div>
+      </div>
+    </section>
+    <section>
+      <h2 class='mainMenu-heading'>Blog</h2>
+      <div class='mainMenu-items'>
+        <div class='mainMenu-items--flex'>
+          <ul>
+            <li>
+              <a href="http://blogs.blackberry.com/" role="menuitem">Enterprise Blog</a>
+            </li>
+            <li>
+              <a href="http://devblog.blackberry.com/" role="menuitem">Developer Blog</a>
+            </li>
+            <li>
+              <a href="http://helpblog.blackberry.com/" role="menuitem">Support Blog</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://www.blackberry.com/us/en/customers/resource-center?assetType=webcast">Webcasts</a>
+            </li>
+            <li>
+              <a href="https://www.blackberry.com/us/en/company/newsroom">Recent News</a>
+            </li>
+          </ul>
         </div>
-      </section>
-    </amp-accordion>
-  </amp-sidebar>
+      </div>
+    </section>
+  </amp-accordion>
+</amp-sidebar>
   <div class='header' role="heading">
     <div class='logo'>
       <a href="https://www.blackberry.com">
@@ -1313,17 +1321,17 @@ section.body:nth-child(odd) {
       </section>
     </amp-accordion>
   </div>
-  <amp-user-notification 
-id="consent" 
-layout="nodisplay">    
-<div id="consent-ui">
-  <p>
-    BlackBerry uses cookies to help make our website better. Some of the cookies are necessary for proper
-    functioning of the site, while others are to help us understand how you use it. <a title="BlackBerry Privacy Policy" href="https://us.blackberry.com/legal/privacy-policy">Read more here</a> about our cookies, and how you can
-    opt out. By continuing to use this site you accept our use of cookies. XXX
-  </p>
-  <button class="btn" on="tap:consent.dismiss" role="button">Accept</button>      
-</div>
+  <amp-user-notification id="consent" layout="nodisplay">
+  <div id="consent-ui">
+    <p>
+      BlackBerry uses cookies to help make our website better. Some of the cookies are necessary for proper
+      functioning of the site, while others are to help us understand how you use it. <a
+        title="BlackBerry Privacy Policy" href="https://us.blackberry.com/legal/privacy-policy">Read more here</a> about
+      our cookies, and how you can
+      opt out. By continuing to use this site you accept our use of cookies. XXX
+    </p>
+    <button class="btn" on="tap:consent.dismiss" role="button">Accept</button>
+  </div>
 </amp-user-notification>
 
   
