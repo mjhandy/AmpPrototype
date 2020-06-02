@@ -1,0 +1,55 @@
+.header {
+  background-color: $black;
+  height: 50px;
+  color: $white;
+  fill: $white;
+
+  .logo {
+    float: left;
+
+    a {
+
+
+      
+      text-decoration: none;
+      margin: 10px 0 0 15px;
+      display: block;
+      fill: $white;
+
+      svg {
+        width: 150px;
+      }
+    }
+  }
+
+  .menu {
+    float: right;
+    margin: 10px 15px 0 0;
+
+    a {
+      text-decoration: none;
+      display: block;
+      float: left;
+      margin: 3px 10px 0 0;
+      width: fit-content;
+
+      svg {
+        width: 25px;
+        height: 25px;
+        ;
+      }
+    }
+
+    .navButton {
+      float: left;
+      background-color: transparent;
+      border: none;
+      fill: $white;
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}

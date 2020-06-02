@@ -1,0 +1,26 @@
+.col-100 {
+    width: 100%
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.header,
+.main,
+.footer {
+    max-width: 720px;
+    margin: auto;
+}

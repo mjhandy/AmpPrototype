@@ -1,0 +1,46 @@
+.card-deck {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    .card {
+        display: flex;
+        -webkit-box-flex: 1;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+        flex: 0 0 50%;
+        position: relative;
+        min-width: 0;
+
+        .card-title {
+            background-color: #1475dc;
+            color: #fff;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        .card-body {
+            flex: 1 1 auto;
+        }
+
+        .card-footer {
+            padding: 5px 0;
+        }
+        
+        .card-footer a+a {
+            margin: 10px 0 0 0;
+        }
+    }    
+
+}
+
+
+
+
+
