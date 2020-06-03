@@ -1,0 +1,21 @@
+.product {
+  &-card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-between;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+    padding: 5px;
+    align-content: center;
+
+    p {
+      text-align: center;
+    }
+  }
+}
