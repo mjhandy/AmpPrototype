@@ -1,12 +1,22 @@
-.btn{
-  border: 1px solid $blue;
+.btn {
   text-decoration: none;
-  border-radius: 25px;
-  display: block;
-  width: fit-content;
-  padding: 5px 10px;    
-  text-align: center;
-  text-transform: uppercase;
   background-color: transparent;
   color: $blue;
+
+  &-pill {
+    border: 1px solid $blue;
+    border-radius: 25px;
+    padding: 5px 10px;
+    width: fit-content;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &-chevron {
+    &:after {
+      content: '>';
+      padding-left: 10px;
+    }
+  }
 }

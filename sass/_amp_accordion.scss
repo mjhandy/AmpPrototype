@@ -1,9 +1,39 @@
 amp-accordion {
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 
-    section {
-        padding: 0;
+  section {
+    padding-bottom: 0;
+  }
+
+
+}
+
+
+.i-amphtml {
+  &-accordion {
+    &-header {
+      color: $blue;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid grey;
+      padding-right: 0;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      
+      &:after{
+        display: inline-block;
+        content: '+';
+        float: right;
+      }
+      &[aria-expanded="true"]{
+        &:after{
+          content: '–';
+        }
+      }
     }
+  }
 }
