@@ -127,8 +127,8 @@ body {
 }
 
 h1 {
-  margin: 0 0 15px 0;
-  font-size: 32px;
+  margin: 0 0 30px 0;
+  font-size: 40px;
   font-weight: 300;
 }
 
@@ -166,6 +166,8 @@ a {
   display: block;
   text-transform: uppercase;
   text-align: center;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .btn-chevron:after {
@@ -181,7 +183,7 @@ amp-accordion {
 }
 
 amp-accordion section {
-  padding-bottom: 0;
+  padding: 0 0 5px 0;
 }
 
 .i-amphtml-accordion-header {
@@ -205,12 +207,21 @@ amp-accordion section {
   content: '–';
 }
 
+.i-amphtml-accordion section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 amp-carousel .slide {
   padding: 10px 0;
 }
 
+amp-carousel .slide amp-img {
+  margin: 0 0 30px 0;
+}
+
 amp-carousel .slide h3 {
-  color: #1475DC;
+  color: #000;
 }
 
 .header {
@@ -359,10 +370,33 @@ amp-carousel .slide h3 {
 
 section {
   padding: 20px 15px;
+  position: relative;
+}
+
+section.hero {
+  padding: 0;
+}
+
+section.hero .btn {
+  color: #fff;
+  border-color: #fff;
 }
 
 section.body:nth-child(odd) {
   background: #f3f3f3;
+}
+
+.hero-copy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card-deck {
@@ -430,6 +464,7 @@ section.body:nth-child(odd) {
 
 .footer {
   background-color: #000;
+  padding: 30px 0;
 }
 
 .footer ul {

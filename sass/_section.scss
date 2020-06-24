@@ -1,5 +1,14 @@
 section {
   padding: 20px 15px;
+  position: relative;
+
+  &.hero {
+    padding: 0;
+    .btn{
+      color: #fff;
+      border-color: #fff;
+    }
+  }
 
   &.body {
     &:nth-child(odd) {
@@ -7,4 +16,19 @@ section {
     }
   }
 
+}
+
+.hero {
+  &-copy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+  }
 }

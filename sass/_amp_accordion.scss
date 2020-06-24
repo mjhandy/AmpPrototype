@@ -5,7 +5,7 @@ amp-accordion {
   margin-bottom: 30px;
 
   section {
-    padding-bottom: 0;
+    padding: 0 0 5px 0;
   }
 
 
@@ -34,6 +34,10 @@ amp-accordion {
           content: '–';
         }
       }
+    }
+    section{
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
