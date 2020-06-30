@@ -10,19 +10,19 @@
 
 @import 'colours';
 
-@import 'layout';
+@import 'layout/layout';
 
-@import 'typography';
-@import 'button';
+@import 'typography/typography';
+@import 'buttons/buttons';
 
-@import 'amp_accordion';
-@import 'amp_carousel';
-@import 'header';
-@import 'hero';
-@import 'nav';
-@import 'oneTrust';
-@import 'section';
-@import 'cards';
-@import 'product-card';
-@import 'footer';
-@import 'amp_consent';
+@import 'accordion/accordion';
+@import 'carousel/carousel';
+@import 'header/header';
+@import 'hero/hero';
+@import 'nav/nav';
+@import 'consent/oneTrust';
+@import 'section/section';
+@import 'cards/cards';
+@import 'cards/product-card';
+@import 'footer/footer';
+@import 'consent/consent';
