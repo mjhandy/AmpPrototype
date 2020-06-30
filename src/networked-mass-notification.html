@@ -197,42 +197,7 @@
   </div>
 
   @@footer
-  <amp-geo layout="nodisplay">
-    <script type="application/json">
-      {
-        "ISOCountryGroups": {
-          "us": ["us", "ca"],
-          "eu": ["uk", "fr", "de", "it"]
-        }
-      }
-    </script>
-  </amp-geo>
-  <amp-consent layout="nodisplay" id="consent-element">
-    <script type="application/json">
-      {
-        "consents": {
-          "eu": {
-            "promptIfUnknownForGeoGroup": "us",
-            "promptUI": "myConsentFlow"
-          }
-        },
-        "postPromptUI": "post-consent-ui"
-      }
-    </script>
-    <div id="myConsentFlow" class="popupOverlay">
-      <div class="consentPopup">
-        <amp-iframe id='idFrame' layout="fill" resizable
-          sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" src="/onetrust.html">
-          <div placeholder></div>
-          <div overflow></div>
-        </amp-iframe>
-      </div>
-    </div>
-    <div id="post-consent-ui">
-      <a on="tap:consent-element.prompt;" role="button" class="manage-settings-link">Do Not Sell My Personal
-        Information</a>
-    </div>
-  </amp-consent>
+  @@cookieNotification
 </body>
 
 </html>

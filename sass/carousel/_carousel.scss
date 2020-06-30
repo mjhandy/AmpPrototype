@@ -1,4 +1,22 @@
 amp-carousel{
+
+  .amp-carousel-button{
+    margin: 5px;
+    background-color: rgba(grey, .5);
+    &:hover{
+      background-color: rgba(grey, .9);
+    }
+    &-prev{
+
+    }
+  }
+
+
+  &.theme{
+    &-quote{
+
+    }
+  }
   .slide{
     padding: 10px 0;
     amp-img{

@@ -16,7 +16,7 @@
 <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
 
 <!-- https://community.cookiepro.com/s/article/UUID-94cf9b13-1998-d989-a5e0-d01a73a2e0a7#:~:text=%20To%20implement%20a%20Cookie%20Consent%20solution%20for,3%20The%20OneTrust%20Cookie%20Consent%20solution%20More%20 -->
 
@@ -247,6 +247,15 @@ amp-accordion section {
 .i-amphtml-accordion section {
   padding-left: 0;
   padding-right: 0;
+}
+
+amp-carousel .amp-carousel-button {
+  margin: 5px;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+amp-carousel .amp-carousel-button:hover {
+  background-color: rgba(128, 128, 128, 0.9);
 }
 
 amp-carousel .slide {
@@ -1481,6 +1490,20 @@ section.body:nth-child(odd) {
       </section>
     </amp-accordion>
 </div>
+<amp-analytics type="gtag" data-credentials="include">
+  <script type="application/json">
+    {
+      "vars": {
+        "gtag_id": "UA-42639814-33",
+        "config": {
+          "UA-42639814-33": {
+            "groups": "default"
+          }
+        }
+      }
+    }
+  </script>
+</amp-analytics>
   <amp-user-notification id="consent" layout="nodisplay">
   <div id="consent-ui">
     <p>
@@ -1495,20 +1518,7 @@ section.body:nth-child(odd) {
 </amp-user-notification>
 
   
-  <amp-analytics type="gtag" data-credentials="include">
-    <script type="application/json">
-    {
-      "vars": {
-        "gtag_id": "UA-42639814-33",
-        "config": {
-          "UA-42639814-33": {
-            "groups": "default"
-          }
-        }
-      }
-    }
-  </script>
-  </amp-analytics>
+
 </body>
 
 </html>
