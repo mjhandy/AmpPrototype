@@ -7,14 +7,51 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <meta name="description" content="This is the AMP Boilerplate.">
   <link rel="canonical" href="https://www.blackberry.com/us/en">
+  <!-- global head items-->
+
   <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
-  <link rel="icon" href="https://www.blackberry.com/etc/designs/bbcom-aem-project/images/favicon.ico">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <!-- Import other AMP Extensions here -->
-  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  <script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
+<link rel="icon" href="https://www.blackberry.com/etc/designs/bbcom-aem-project/images/favicon.ico">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<!-- Import other AMP Extensions here -->
+<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+
+<!-- https://community.cookiepro.com/s/article/UUID-94cf9b13-1998-d989-a5e0-d01a73a2e0a7#:~:text=%20To%20implement%20a%20Cookie%20Consent%20solution%20for,3%20The%20OneTrust%20Cookie%20Consent%20solution%20More%20 -->
+
+<!-- OneTrust Cookies Consent Notice start -->
+<script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
+<script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="95e65c7e-8faf-44c2-8ea6-e981eadab730-test.js">
+</script>
+<!-- OneTrust Cookies Consent Notice end -->
+
+
+<!--  https://theblog.adobe.com/adobe-analytics-for-the-accelerated-mobile-pages-project/ -->
+<!-- https://docs.adobe.com/content/help/en/analytics/implementation/other/amp.html#:~:text=%20Determine%20which%20method%20to%20implement%20Adobe%20Analytics,containing%20the%20same%20AppMeasurement%20code%20you...%20More%20 -->
+<!-- adobe launch -->
+
+
+<amp-analytics type="adobeanalytics_nativeConfig">
+  <script type="application/json">
+    {
+      "requests": {
+        "base": "https://${host}",
+        "iframeMessage": "${base}/stats.html?campaign=${queryParam(campaign)}&pageURL=${ampdocUrl}&ref=${documentReferrer}"
+      },
+      "vars": {
+        "host": "example.sc.omtrdc.net"
+      },
+      "extraUrlParams": {
+      "pageName": "Example AMP page",
+      "v1": "eVar1 example value"
+      }
+    }
+ </script>
+</amp-analytics>
+
+  
   <style amp-boilerplate>
     body {
       -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -366,6 +403,34 @@ amp-carousel .slide h3 {
 #mainMenu .mainMenu-heading[aria-expanded='true']:after {
   line-height: .50;
   content: '\2013';
+}
+
+amp-consent {
+  background-color: transparent;
+}
+
+amp-consent #post-consent-ui,
+.amp-geo-group-eea amp-consent #consentDialog {
+  padding-bottom: 45px;
+}
+
+.consentPopup {
+  padding: var(--space-3);
+  margin: 0 auto;
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 100vh;
+}
+
+.consentPopup amp-iframe {
+  background-color: transparent;
+}
+
+.manage-settings-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 section {
@@ -1415,7 +1480,7 @@ section.body:nth-child(odd) {
         </div>
       </section>
     </amp-accordion>
-  </div>
+</div>
   <amp-user-notification id="consent" layout="nodisplay">
   <div id="consent-ui">
     <p>

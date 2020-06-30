@@ -38,6 +38,10 @@ module.exports = function(grunt) {
         options:{
           patterns: [
             {
+              match: 'head',
+              replacement : '<%= grunt.file.read("components/head.html") %>'
+            },
+            {
               match: 'css',
               replacement: '<%= grunt.file.read("css/default.css") %>'
             },
