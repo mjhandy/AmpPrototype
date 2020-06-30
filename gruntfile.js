@@ -25,7 +25,7 @@ module.exports = function(grunt) {
       },
       default:{
         options:{
-          outputStyle: 'expanded'
+          outputStyle: 'compressed'
         },
         files: {
           './css/default.css' : './sass/default.scss'
@@ -46,12 +46,16 @@ module.exports = function(grunt) {
               replacement: '<%= grunt.file.read("css/default.css") %>'
             },
             {
-              match: 'mainNav',
-              replacement: '<%= grunt.file.read("components/nav.html") %>'
+              match: 'analytics',
+              replacement: '<%= grunt.file.read("components/analytics.html") %>'
             },
             {
               match : 'header',
               replacement: '<%= grunt.file.read("components/header.html") %>'
+            },
+            {
+              match: 'mainNav',
+              replacement: '<%= grunt.file.read("components/nav.html") %>'
             },
             {
               match: 'footer',

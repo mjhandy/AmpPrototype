@@ -12,9 +12,8 @@ amp-accordion {
 }
 
 
-.i-amphtml {
-  &-accordion {
-    &-header {
+.amp-accordion{
+    &--header {
       color: $blue;
       background-color: transparent;
       border: 0;
@@ -40,4 +39,3 @@ amp-accordion {
       padding-right: 0;
     }
   }
-}

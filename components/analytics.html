@@ -1,0 +1,51 @@
+<amp-analytics type="gtag" data-credentials="include">
+  <script type="application/json">
+  {
+    "vars" : {
+      "gtag_id": "UA-XXXXX-Y",
+      "config" : {
+        "UA-XXXXX-Y": {
+          "groups": "default"
+        }
+      }
+    }
+  }
+  </script>
+  </amp-analytics>
+<!--  https://theblog.adobe.com/adobe-analytics-for-the-accelerated-mobile-pages-project/ -->
+<!-- https://docs.adobe.com/content/help/en/analytics/implementation/other/amp.html#:~:text=%20Determine%20which%20method%20to%20implement%20Adobe%20Analytics,containing%20the%20same%20AppMeasurement%20code%20you...%20More%20 -->
+<!-- adobe launch -->  
+  <amp-analytics>
+    <script type="application/json">
+    {
+      "transport": {
+        "xhrpost": false,
+        "beacon": true
+      },
+      "requests": {
+        "base": "https://${trackingServer}/b/ss/${accounts}/1/AMP-0.1/s${random}",
+        "pageView": "${base}?AQB=1&vid=CLIENT_ID(adobe_amp_id)&pageName=${pageName}&j=amp&AQE=1",
+        "buttonClick": "${base}?AQB=1&vid=CLIENT_ID(adobe_amp_id)&pageName=${pageName}&j=amp&pe=lnk_o&v1=${eVar1}&AQE=1"
+      },
+      "vars": {
+        "trackingServer": "metrics.example.com",
+        "accounts": "reportSuiteID",
+        "pageName": "Adobe Analytics Using amp-analytics tag"
+      },
+      "triggers": {
+        "pageLoad": {
+          "on": "visible",
+          "request": "pageView"
+        },
+        "click": {
+          "on": "click",
+          "selector": "button",
+          "request": "buttonClick",
+          "vars": {
+            "eVar1": "button clicked"
+          }
+        }
+      }
+    }
+    </script>
+  </amp-analytics> 
